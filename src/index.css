@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-striyo-bg-start: #020617;
+  --color-striyo-bg-mid: #0F172A;
+  --color-striyo-bg-end: #020617;
+  
+  --color-striyo-primary-start: #00F5A0;
+  --color-striyo-primary-end: #00D9F5;
+  
+  --color-striyo-secondary-start: #7F5AF0;
+  --color-striyo-secondary-end: #2CB67D;
+  
+  --color-striyo-accent: #10b981;
+  --color-striyo-alert: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-striyo-bg-start text-white antialiased selection:bg-striyo-accent/30;
+    background: radial-gradient(circle at 50% 50%, var(--color-striyo-bg-mid) 0%, var(--color-striyo-bg-start) 100%);
+  }
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+
+.striyo-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-striyo-primary-start to-striyo-primary-end;
+}
+
+.striyo-glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.striyo-glow-blue {
+  box-shadow: 0 0 20px rgba(0, 217, 245, 0.3);
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.scanline {
+  animation: scanline 4s linear infinite;
+}
+
+body {
+  background-color: #050505;
+  color: white;
+  overflow: hidden;
+}

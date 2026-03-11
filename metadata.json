@@ -1,0 +1,5 @@
+{
+  "name": "STRIYO AI Assistant",
+  "description": "Jarvis-style Android AI assistant with anime companion, voice interaction, and phone automation.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"]
+}

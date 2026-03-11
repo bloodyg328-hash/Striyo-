@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "STRIYO",
+    "slug": "striyo-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/vite.svg",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./public/vite.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#020202"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./public/vite.svg",
+        "backgroundColor": "#020202"
+      },
+      "package": "com.striyo.assistant",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "SEND_SMS",
+        "READ_CONTACTS",
+        "NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "ais-pre-yqrorihognkw3keu6pyksi-684838015462.asia-southeast1.run.app"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./public/vite.svg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "striyo-assistant-project"
+      }
+    }
+  }
+}
